@@ -1,4 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CarEntity" representedClassName="CarEntity" syncable="YES">
+        <attribute name="carID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carISDefault" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carModelID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carNO" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carPic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carSeries" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carSeriesID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endinspectData" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endinsuranceData" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastMainData" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastMaintenanceData" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalDistance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="health" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HealthEntity" inverseName="car" inverseEntity="HealthEntity" syncable="YES"/>
+        <relationship name="homedata" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HomeEntity" inverseName="car" inverseEntity="HomeEntity" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserEntity" inverseName="car" inverseEntity="UserEntity" syncable="YES"/>
+    </entity>
+    <entity name="HealthEntity" representedClassName="HealthEntity" syncable="YES">
+        <attribute name="attribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="breakRules" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carNO" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="checkTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="checkTimeTotal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="insuranceCurrent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="insuranceDateTotal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isOnline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="manDis" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="manTotalDis" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CarEntity" inverseName="health" inverseEntity="CarEntity" syncable="YES"/>
+    </entity>
+    <entity name="HomeEntity" representedClassName="HomeEntity" syncable="YES">
+        <attribute name="avgFuel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carGoRanking" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carGoScore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carLimit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="carNO" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deviceInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="driveLevel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="myCarScore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalDistance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="upgradeDis" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CarEntity" inverseName="homedata" inverseEntity="CarEntity" syncable="YES"/>
+    </entity>
+    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES">
+        <attribute name="userCityCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userCityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userDevInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userPwd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CarEntity" inverseName="user" inverseEntity="CarEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CarEntity" positionX="-171" positionY="68" width="128" height="283"/>
+        <element name="HealthEntity" positionX="-0" positionY="-114" width="128" height="285"/>
+        <element name="HomeEntity" positionX="63" positionY="210" width="128" height="240"/>
+        <element name="UserEntity" positionX="-360" positionY="27" width="128" height="163"/>
+    </elements>
 </model>
