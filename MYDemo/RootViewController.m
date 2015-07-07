@@ -27,6 +27,11 @@
     [super viewDidLoad];
 
     self.navigationController.navigationBarHidden = YES;
+    
+    
+    
+    NSLog(@"这是用来测试GIT修改的");
+    
 }
 
 

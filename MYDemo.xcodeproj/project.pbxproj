@@ -11,6 +11,7 @@
 		EF20BFD31B1D8B8C0079342D /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EF20BFD21B1D8B8C0079342D /* LoginRequest.m */; };
 		EF20BFD91B1DAAA00079342D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF20BFD71B1DAAA00079342D /* MainViewController.m */; };
 		EF20BFDA1B1DAAA00079342D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF20BFD81B1DAAA00079342D /* MainViewController.xib */; };
+		EF7AE8F31B4B77700022120C /* oooTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7AE8F21B4B77700022120C /* oooTableViewController.m */; };
 		EFB7C61B1B184BE100EA5972 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB7C61A1B184BE100EA5972 /* main.m */; };
 		EFB7C61E1B184BE100EA5972 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB7C61D1B184BE100EA5972 /* AppDelegate.m */; };
 		EFB7C6211B184BE200EA5972 /* MYDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFB7C61F1B184BE200EA5972 /* MYDemo.xcdatamodeld */; };
@@ -59,6 +60,8 @@
 		EF20BFD61B1DAAA00079342D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		EF20BFD71B1DAAA00079342D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		EF20BFD81B1DAAA00079342D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		EF7AE8F11B4B77700022120C /* oooTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oooTableViewController.h; sourceTree = "<group>"; };
+		EF7AE8F21B4B77700022120C /* oooTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oooTableViewController.m; sourceTree = "<group>"; };
 		EFB7C6151B184BE100EA5972 /* MYDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB7C6191B184BE100EA5972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFB7C61A1B184BE100EA5972 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				EF20BFD61B1DAAA00079342D /* MainViewController.h */,
 				EF20BFD71B1DAAA00079342D /* MainViewController.m */,
 				EF20BFD81B1DAAA00079342D /* MainViewController.xib */,
+				EF7AE8F11B4B77700022120C /* oooTableViewController.h */,
+				EF7AE8F21B4B77700022120C /* oooTableViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -425,6 +430,7 @@
 				EFC2BF1D1B1C0AEB00541DF5 /* libPods.a in Sources */,
 				EFB7C61E1B184BE100EA5972 /* AppDelegate.m in Sources */,
 				EFE8E1E01B1C496B003AB573 /* SDBaseViewController.m in Sources */,
+				EF7AE8F31B4B77700022120C /* oooTableViewController.m in Sources */,
 				EFE8E1FF1B1C5CF2003AB573 /* UserEntity.m in Sources */,
 				EFE8E1FC1B1C5CF2003AB573 /* CarEntity.m in Sources */,
 				EFB7C6571B186FCC00EA5972 /* CSHTTPRequest.m in Sources */,
